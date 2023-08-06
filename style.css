@@ -14,18 +14,26 @@ body{
 }
 
 #title{
+    box-shadow: 10px 10px;
+    background-color: rgb(228, 228, 228);
     font-size: 75px;
     text-align: center;
+    padding: 10px;
 }
 
 #welcomeMessage{
+    
+    box-shadow: 10px 10px #4886a5;
+    background-color: rgb(229, 229, 229);
     width: 650px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
+    padding: 20px;
 }
-
+/* lmao* */
 #askQuestionButton{
-    margin-top: 20px;
+    box-shadow: 5px 5px;
+    margin-top: 60px;
     padding: 15px;
     border-radius: 25px;
     background-color: rgb(255, 206, 114);
@@ -133,3 +141,19 @@ body{
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
 }
+
+@keyframes fadeInOutAnimation {
+    0% {
+      color: rgb(85, 189, 109);
+    }
+    100% {
+      color: rgb(72, 134, 165)
+    }
+  }
+  
+  .fadeInOut {
+    cursor: pointer;
+    animation: fadeInOutAnimation 1.5s infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+  }

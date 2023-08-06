@@ -4,6 +4,7 @@ const text = document.getElementById("text");
 const askQuestionTitle = document.getElementById("askQuestionTitle");
 const aiResponse = document.getElementById("aiResponse");
 const loading = document.getElementById("loading");
+const welcome = document.getElementById("welcomeMessage");
 
 questionSpace.style.height = text.getBoundingClientRect().height + "px";
 let talking = false;
@@ -31,6 +32,29 @@ let message = "";
 
 text.innerHTML = "";
 
+welcome.innerHTML ="";
+const words = "Welcome to AI Therapy, which is a cutting-edge AI technology and a comforting, familiar voice, we offer you a unique space to embark on a journey of self-discovery and healing. Our platform is dedicated to offering you a safe haven where you can freely express your thoughts, untangle your emotions, and find the insights that can lead to positive change.";
+
+// for (let i = 0; i < words.length; i++) {
+//     let currentChar = words[i].split('');
+//     for (let j = 0; j < currentChar.length; j++) {
+//     await new Promise((resolve) => setTimeout(resolve, 70));
+//     welcome.innerHTML += currentChar[j];
+//     }
+//     await new Promise((resolve) => setTimeout(resolve, 99));
+//     welcome.innerHTML += ' ';
+// }
+let index = 0;
+var inter = setInterval(function(){
+    welcome.innerHTML = welcome.innerHTML + words.charAt(index);
+    if(index == words.length-1){
+        clearInterval(inter);
+    }
+    index++;
+    
+}, 12);
+
+//;------------------------------------------------------------------;
 fetch(file)
     .then((response) => response.text())
     .then((data) => {
