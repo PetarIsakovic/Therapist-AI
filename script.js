@@ -1,4 +1,3 @@
-import HACKATHONAPIKEY from "./apikey.js";
  
 
 const askQuestion = document.getElementById("askQuestionButton");
@@ -121,7 +120,7 @@ console.log("OLD AI MESSAGE: " + oldMessage);
         const options = {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${HACKATHONAPIKEY}`,
+                'Authorization': `Bearer ${process.env.HACKATHONAPIKEY}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
