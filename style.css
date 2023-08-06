@@ -117,5 +117,19 @@ body{
 }
 
 #uniqueWord{
-    color: rgb(33, 94, 33);
+    background-image: linear-gradient( #017e8e, #a946ff);
+		background-size: 100%;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-webkit-text-fill-color: transparent; 
+		-moz-text-fill-color: transparent;
+
+}
+#uniqueWord2{
+    background-image: linear-gradient( #018e53, #0ffe47);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
