@@ -120,7 +120,7 @@ console.log("OLD AI MESSAGE: " + oldMessage);
         const options = {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.HACKATHONAPIKEY}`,
+                'Authorization': `Bearer ${HACKATHONAPIKEY}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
