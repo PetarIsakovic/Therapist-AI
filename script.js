@@ -1,3 +1,4 @@
+import HACKATHONAPIKEY from "./apikey.js";
  
 
 const askQuestion = document.getElementById("askQuestionButton");
