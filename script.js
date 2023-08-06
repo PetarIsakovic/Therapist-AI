@@ -21,9 +21,7 @@ let talking = false;
 
 // webpack.config.js
 
-// let file = "env.txt"
 
-// let APIKEY = "";
 
 let oldMessage = "";
 let oldMessageOfUser = "";
@@ -120,7 +118,7 @@ console.log("OLD AI MESSAGE: " + oldMessage);
         const options = {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${APIKEY}`,
+                'Authorization': `Bearer ${process.env.HACKATHONAPIKEY}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
