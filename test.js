@@ -1,3 +1,0 @@
-const HACKATHONAPIKEY='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'
-
-export default HACKATHONAPIKEY;
