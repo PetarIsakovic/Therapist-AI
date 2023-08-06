@@ -21,9 +21,9 @@ let talking = false;
 
 // webpack.config.js
 
-let file = "env.txt"
+// let file = "env.txt"
 
-let APIKEY = "";
+// let APIKEY = "";
 
 let oldMessage = "";
 let oldMessageOfUser = "";
@@ -55,14 +55,14 @@ var inter = setInterval(function(){
 }, 12);
 
 //;------------------------------------------------------------------;
-fetch(file)
-    .then((response) => response.text())
-    .then((data) => {
-    APIKEY = data;
-    })
-    .catch((error) => {
-        console.log("Failed to get text file", error);
-    });
+// fetch(file)
+//     .then((response) => response.text())
+//     .then((data) => {
+//     APIKEY = data;
+//     })
+//     .catch((error) => {
+//         console.log("Failed to get text file", error);
+//     });
 
 askQuestion.addEventListener("click", function(){
     if(!talking){
